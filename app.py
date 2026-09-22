@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request
 import joblib
 import numpy as np
@@ -40,6 +39,15 @@ def home():
             prediction = "Lower predicted cardiovascular disease risk"
 
     return render_template("index.html", prediction=prediction)
+
+
+# ==============================
+# ABOUT US PAGE
+# ==============================
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
 if __name__ == "__main__":

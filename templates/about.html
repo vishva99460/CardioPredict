@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CardioPredict</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #263238;
+        }
+
+        .navbar {
+            background: #263238;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #90caf9;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 55px 20px 35px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #607d8b;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.7;
+            color: #546e7a;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f5f7fa;
+            border-radius: 10px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 14px;
+        }
+
+        .tech-list {
+            margin-top: 15px;
+            padding-left: 25px;
+            line-height: 2;
+            color: #546e7a;
+        }
+
+        .disclaimer {
+            background: #fff8e1;
+            border-left: 5px solid #ffb300;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #263238;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="/" class="logo">
+            CardioPredict
+        </a>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>About CardioPredict</h1>
+
+        <p>Cardiovascular Disease Risk Prediction System</p>
+
+    </section>
+
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>About the Project</h2>
+
+            <p>
+                CardioPredict is a machine learning based web application
+                designed to predict cardiovascular disease risk using
+                selected health-related input parameters.
+            </p>
+
+            <p style="margin-top: 12px;">
+                The project demonstrates the machine learning workflow,
+                including data preprocessing, exploratory data analysis,
+                model training, evaluation and deployment through a
+                web interface.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Our Objective</h2>
+
+            <p>
+                The main objective of CardioPredict is to provide a simple
+                and user-friendly interface where users can enter relevant
+                health information and receive a machine learning based
+                prediction.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Key Features</h2>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>Easy to Use</h3>
+                    <p>
+                        Simple interface for entering health-related
+                        information.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Machine Learning</h3>
+                    <p>
+                        Uses a trained classification model for prediction.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Fast Prediction</h3>
+                    <p>
+                        Provides prediction results through the web
+                        application.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Web Based</h3>
+                    <p>
+                        Built using Flask with a responsive interface.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Technologies Used</h2>
+
+            <ul class="tech-list">
+                <li>Python</li>
+                <li>Pandas and NumPy</li>
+                <li>Scikit-learn</li>
+                <li>Random Forest Classification</li>
+                <li>Flask</li>
+                <li>HTML and CSS</li>
+                <li>GitHub and Render</li>
+            </ul>
+
+        </div>
+
+
+        <div class="card disclaimer">
+
+            <h2>Disclaimer</h2>
+
+            <p>
+                CardioPredict is an educational machine learning project.
+                Its prediction should not be considered a medical diagnosis
+                or a substitute for professional medical advice.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+        <p>© 2026 CardioPredict | Machine Learning Project</p>
+
+    </footer>
+
+</body>
+</html>
